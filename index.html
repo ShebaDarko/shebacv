@@ -18,27 +18,43 @@
             padding: 20px;
             background: #fff;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
         }
-        h1, h2, h3 {
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            margin: 0;
             color: #333;
+        }
+        .contact-info {
+            font-size: 0.9em;
+            color: #555;
         }
         .section {
             margin-bottom: 20px;
         }
         .section h2 {
-            border-bottom: 2px solid #333;
+            border-bottom: 2px solid #007BFF;
             padding-bottom: 5px;
-        }
-        .section p, .section ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
+            color: #007BFF;
         }
         .section ul {
             padding-left: 20px;
         }
-        .contact-info {
-            font-size: 0.9em;
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-top: 1px solid #0056b3;
+        }
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
@@ -47,7 +63,9 @@
         <header>
             <h1>Your Name</h1>
             <p class="contact-info">
-                Email: your.email@example.com | Phone: +123-456-7890 | LinkedIn: linkedin.com/in/yourprofile
+                Email: <a href="mailto:your.email@example.com">your.email@example.com</a> | 
+                Phone: +123-456-7890 | 
+                LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a>
             </p>
         </header>
         
@@ -123,5 +141,9 @@
             </ul>
         </section>
     </div>
+
+    <footer>
+        <p>© 2024 Your Name. All rights reserved.</p>
+    </footer>
 </body>
 </html>
